@@ -15,7 +15,9 @@ print(logo)
 
 
 #Create blanks
+
 display = []
+
 for _ in range(word_length):
     display += "_"
 
@@ -34,6 +36,7 @@ while not end_of_game:
             display[position] = letter
 
     #Check if user is wrong.
+    
     if guess not in chosen_word:
         
         print(f"You guessed {guess}, that's not in the word. You lose a life.")
